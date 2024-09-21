@@ -23,13 +23,24 @@ const Books = () => {
 
   return (
     <div>
+      {/* Header Section */}
+      <header className="header">
+        <div className="logo">
+          <Link to="/">Library Catalog</Link>
+        </div>
+        
+      </header>
+
+      {/* Search Area */}
       <div className="search-area">
         <input
           type="text"
-          placeholder="Search for books by title, author, or genre"
+          placeholder="Search for books by title and author"
           onChange={(e) => setQuery(e.target.value)}
         />
       </div>
+
+      {/* Books Grid */}
       <div className="book-grid">
         {books.map((book, index) => (
           <Link to={`/book/${book.key}`} key={index}>

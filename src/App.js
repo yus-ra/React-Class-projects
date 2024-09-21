@@ -11,11 +11,39 @@ import List from "./movie/List";
 import MovieDetails from "./movie/MovieDetails";
 import Books from "./library/Books";
 import BookDetails from "./library/BookDetails";
+import AppliedJob from "./jobProject/Pages/AppliedJob";
+import BookMark from "./jobProject/Pages/BookMark";
+import DeleteAccount from "./jobProject/Pages/DeleteAccount";
+import EditResume from "./jobProject/Pages/EditResume";
+import Home from "./jobProject/Pages/Home.jsx";
+import JobDetails from "./jobProject/Pages/JobDetails.jsx";
+import JobList from "./jobProject/Pages/JobList.jsx";
+import JobPost from "./jobProject/Pages/JobPost";
+import PostResume from "./jobProject/Pages/PostResume";
+import Profile from "./jobProject/Pages/Profile.jsx";
+import ProfileDetails from "./jobProject/Pages/ProfileDetails";
+import Resume from "./jobProject/Pages/Resume.jsx";
+import Signup from "./jobProject/Pages/Signup";
+import Signin from "./jobProject/Pages/Signin";
 function App() {
   return (
     <div>
       <Router>
         <Routes>
+        <Route path="/job-home" element={<Home />} />
+          <Route path="/job-list" element={<JobList />} />
+          <Route path="/job-details" element={<JobDetails />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/post-resume" element={<PostResume />} />
+          <Route path="/job-post" element={<JobPost />} />
+          <Route path="/edit-resume" element={<EditResume />} />
+          <Route path="/profile-details" element={<ProfileDetails />} />
+          <Route path="/bookmark" element={<BookMark />} />
+          <Route path="/applied-job" element={<AppliedJob />} />
+          <Route path="/delete-account" element={<DeleteAccount />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/signin" element={<Signin />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/list" element={<List />} />
           <Route path="/movie/:id" element={<MovieDetails />} />
