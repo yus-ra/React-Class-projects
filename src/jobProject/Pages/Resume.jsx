@@ -1,7 +1,6 @@
-import Footer from '../Components/Footer';
-import Header from '../Components/Header';
-
-
+import Footer from "../Components/Footer";
+import Header from "../Components/Header";
+import Profile from "../Components/Profile";
 
 function Resume() {
   return (
@@ -27,24 +26,10 @@ function Resume() {
                   alt="Image"
                 />
               </div>
-              <div className="profile-info">
-                <h1>Jhon Doe</h1>
-                <address>
-                  <p>
-                    Address: 123 West 12th Street, Suite 456 New York, NY 123456{" "}
-                    <br /> Phone: +012 345 678 910 <br /> Email:
-                    <a href="#">
-                      {" "}
-                      <span
-                        className="__cf_email__"
-                        data-cfemail="167f62657b73566563646c7f7a737173737d3875797b"
-                      >
-                        [email&#160;protected]
-                      </span>
-                    </a>
-                  </p>
-                </address>
-              </div>
+              <Profile
+              name ="Yusra Ishaq"
+              telephone="0912345678"
+              />
             </div>
             <div className="career-objective section">
               <div className="icons">
@@ -340,7 +325,7 @@ function Resume() {
                 <h3>Personal Deatils</h3>
                 <ul className="address">
                   <li>
-                    <h5>Full Name </h5> <span>:</span>Jhon Doe
+                    <h5>Full Name </h5> <span>:</span>John Doe
                   </li>
                   <li>
                     <h5>Father's Name </h5> <span>:</span>Robert Doe
