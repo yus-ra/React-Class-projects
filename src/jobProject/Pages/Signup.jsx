@@ -52,10 +52,10 @@ const Signup = () => {
       let url = "http://submit/url";
 
       axios.post(url, fd, config).then((response) => {
-        if (response.data.status == 200) {
+        if (response.data.status === 200) {
           console.log("data saved successfully");
         } else {
-          console.log("unable to svae");
+          console.log("unable to save");
         }
       });
     }
