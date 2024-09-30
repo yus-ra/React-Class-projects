@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const Signup = () => {
   const [user, setUser] = useState({
@@ -22,6 +23,13 @@ const Signup = () => {
   });
   const config = {
     headers: { "content-type": "multipart/form-data", Authorization: "Bearer" },
+  };
+  const Alert = () => {
+    Swal.fire({
+      title: "The Internet?",
+      text: "That thing is still around?",
+      icon: "question",
+    });
   };
   const handleChange = (event) => {
     let { name, value } = event.target;
@@ -177,6 +185,9 @@ const Signup = () => {
                     </div>
                     <button type="submit" className="btn">
                       Registration
+                    </button>
+                    <button type="submit" className="btn" onClick="Alert">
+                      Alert
                     </button>
                   </form>
                 </div>
